@@ -1,0 +1,6 @@
+webpack.config.js
+.prettierrc
+.prettierignore
+.eslintrc.js
+.eslintignore
+.babelrc

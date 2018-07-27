@@ -1,0 +1,17 @@
+/build/**
+dist/
+/coverage/**
+/docs/**
+/jsdoc/**
+/templates/**
+/tmp/**
+!.eslintrc.js
+*.css
+*.html
+node_modules
+/webpack/**
+/template/**
+webpack.js
+fractal.js
+plopfile.js
+**/temp/**

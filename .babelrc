@@ -1,0 +1,21 @@
+{
+  "presets": [
+    "es2015",
+    [
+      "env",
+      {
+        "modules": false
+      }
+    ],
+    "react",
+    "stage-2"
+  ],
+  "plugins": [
+    "transform-decorators-legacy",
+    "transform-class-properties",
+    "external-helpers",
+    "transform-runtime",
+    "emotion",
+    "styled-components"
+  ]
+}

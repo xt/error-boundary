@@ -1,0 +1,60 @@
+{
+  "name": "@react-nitro/error-boundary",
+  "version": "0.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "keywords": [
+    "error",
+    "boundary",
+    "react",
+    "hoc",
+    "component"
+  ],
+  "author": {
+    "name": "Nisheed Jagadish",
+    "email": "nisheed2016@gmail.com",
+    "url": "https://github.com/nisheed2440"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xt/error-boundary.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "fbjs": "^0.8.17",
+    "lodash.get": "^4.4.2",
+    "react": "^16.4.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-emotion": "^9.1.2",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-styled-components": "^1.5.1",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-last": "0.0.5",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.1.0"
+  }
+}

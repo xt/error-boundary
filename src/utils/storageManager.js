@@ -60,7 +60,12 @@ class Storage {
     }
     return '';
   }
-
+/**
+ * Function to set a cookie
+ * @param {String} key 
+ * @param {String} value 
+ * @param {String} expiry 
+ */
   static setCookie(key, value, expiry) {
     if (!ExecutionEnvironment.canUseDOM) return;
     const expires = expiry ? `expires=${expiry}` : '';

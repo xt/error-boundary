@@ -1,9 +1,14 @@
 import React from 'react';
 import ExecutionEnvironment from 'fbjs/lib/ExecutionEnvironment';
 import { get } from './utils/lodashUtils';
-import storage from './utils/storageManager';
+import Storage from './utils/storageManager';
 const errorSessionKey = 'error_debug';
-
+/**
+ * Function to create the HOC to act as an error boundary
+ * @param {Object} WrappedComponent The React component to be wrapped by the HOC.
+ * @param {String} path The path(s) of the properties to test from `this.props`.
+ * @param {[String]} name The name of the component to be shown in the error.
+ */
 const withErrorBoundary = (WrappedComponent, path, name) =>
   class extends React.Component {
     constructor(props) {
@@ -17,6 +22,10 @@ const withErrorBoundary = (WrappedComponent, path, name) =>
       // Display fallback UI
       this.setState({ hasError: true, error, info, debugPaths });
     }
+    /**
+     * Function to render the error in-place for the component 
+     * replacing the original wrapped component.
+     */
     getErrors() {
       return (
         <div
@@ -40,6 +49,11 @@ const withErrorBoundary = (WrappedComponent, path, name) =>
         </div>
       );
     }
+    /**
+     * Function to validate the paths on the props object
+     * and show error when paths return undefined.
+     * @param {Object} props The component props
+     */
     validatePath(props) {
       if (!path || !props) {
         return [];
@@ -70,4 +84,4 @@ const withErrorBoundary = (WrappedComponent, path, name) =>
       return <WrappedComponent {...this.props} />;
     }
   };
-export { get, storage, withErrorBoundary };
+export { get, Storage, withErrorBoundary };

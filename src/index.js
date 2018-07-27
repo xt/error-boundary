@@ -15,7 +15,7 @@ const withErrorBoundary = (WrappedComponent, path, name) =>
       super(props);
       this.state = { hasError: false, debugPaths: [], error: null, info: null };
       this.name = name || 'Not Specified';
-      this.debug = storage.getSessionStorage(errorSessionKey) || false;
+      this.debug = Storage.getSessionStorage(errorSessionKey) || false;
     }
     componentDidCatch(error, info) {
       const debugPaths = this.validatePath(this.props);
@@ -23,7 +23,7 @@ const withErrorBoundary = (WrappedComponent, path, name) =>
       this.setState({ hasError: true, error, info, debugPaths });
     }
     /**
-     * Function to render the error in-place for the component 
+     * Function to render the error in-place for the component
      * replacing the original wrapped component.
      */
     getErrors() {

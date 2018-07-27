@@ -62,9 +62,9 @@ class Storage {
   }
 /**
  * Function to set a cookie
- * @param {String} key 
- * @param {String} value 
- * @param {String} expiry 
+ * @param {String} key
+ * @param {String} value
+ * @param {String} expiry
  */
   static setCookie(key, value, expiry) {
     if (!ExecutionEnvironment.canUseDOM) return;

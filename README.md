@@ -2,7 +2,7 @@
 
 An Error Boundary HOC for React Projects
 
-<img  src="./screenshot.PNG" alt="Screenshot">
+![Screenshot](./screenshot.PNG)
 
 ## Installation
 ```bash
